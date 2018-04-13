@@ -7,17 +7,19 @@ In a UNIX terminal, run:
 
 ```
 time python list-append-loop.py
-```
+
 real	0m11.381s
 user	0m10.553s
 sys		0m0.824s
+```
 
 ```
 time python list-comp.py
-```
+
 real	0m4.228s
 user	0m3.428s
 sys		0m0.800s
+```
 
 
 Here we see that the list comprehension was almost 3x as fast
@@ -31,24 +33,32 @@ numbers with the range() function, we can actually just cast the result
 of the range() function to a list and get even faster speed than the
 list comprehension. 
 
+```
+time python cast-list.py
+
+real	0m2.988s
+user	0m2.176s
+sys	0m0.812s
+```
+
 To show a more practical example where you can't just cast it:
 
 ```
 time python list-append-loop2.py
-```
 
 real	0m29.756s
 user	0m28.875s
 sys		0m0.880s
+```
 
 
 ```
 time python list-comp2.py
-```
 
 real	0m21.932s
 user	0m21.031s
 sys		0m0.900s
+```
 
 In this practical example, we see that the list comprehension finished
 in about 2/3 of the time it took the for loop append() method, still
