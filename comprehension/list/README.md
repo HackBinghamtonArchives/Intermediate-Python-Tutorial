@@ -10,7 +10,7 @@ time python list-append-loop.py
 
 real	0m11.381s
 user	0m10.553s
-sys		0m0.824s
+sys	0m0.824s
 ```
 
 ```
@@ -18,7 +18,7 @@ time python list-comp.py
 
 real	0m4.228s
 user	0m3.428s
-sys		0m0.800s
+sys	0m0.800s
 ```
 
 
@@ -48,7 +48,7 @@ time python list-append-loop2.py
 
 real	0m29.756s
 user	0m28.875s
-sys		0m0.880s
+sys	0m0.880s
 ```
 
 
@@ -57,7 +57,7 @@ time python list-comp2.py
 
 real	0m21.932s
 user	0m21.031s
-sys		0m0.900s
+sys	0m0.900s
 ```
 
 In this practical example, we see that the list comprehension finished
